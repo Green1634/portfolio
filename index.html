@@ -47,6 +47,7 @@
 
             img {
                 border-radius: 10px;
+                
             }
             #info {
                 margin-left: 20px;
@@ -72,18 +73,35 @@
             .skills__name {
                 text-transform: uppercase;
             }
-
-            .skills__bar{
-                position: absolute;
-                bottom: -.75rem;
-                height: .25rem;
-                background-color: red;
+            .skills {
+            text-align: right;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
             }
 
-            #works{
-                background-color: #616161 grey darken-2;
+            .html {width: 90%; background-color: #4CAF50;}
+            .css {width: 80%; background-color: #2196F3;}
+            .js {width: 65%; background-color: #f44336;}
+            .php {width: 60%; background-color: #808080;}
+            .repair {width: 90%; background-color: #808080;}
+            .net {width: 70%; background-color: #f44336;}
+            .exch {width: 90%; background-color: #2196F3;}
+            .shar {width: 65%; background-color: #4CAF50;}
+            .py {width: 50%; background-color: #808080;}
             }
-    </style>
+            
+            #works {
+                background-color: #808080;
+                
+            }
+
+            #works {
+                background-image: url(img/try.jpg);
+                /* background-color: black; */
+                
+            }
+     </style>
 
 </head>
 <body>
@@ -111,7 +129,7 @@
                 <div class="white-text">Hello, my name is</div>
                 <div class="white-text" id="intro2"><h3>Ibrahim Oluwakemi Green</h3></div>
                 <div class="white-text">And I am a <span class="red-text text-darken-1" id="intro2">Web Developer</span></div><br/>
-                <a class="waves-effect waves-light btn red">Hire Me</a>
+                <a class="waves-effect waves-light btn red" href="mailto:greenreina01@gmail.com">Hire Me</a>
 
 
             </div>
@@ -123,16 +141,16 @@
     </header>
 
     <!--Sidenave structure-->
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <ul class="sidenav #e0e0e0 grey lighten-2" id="mobile-demo">
+        <li><a class="red-text" href="#home">Home</a></li>
+        <li><a class="red-text" href="#about">About</a></li>
+        <li><a class="red-text" href="#skills">Skills</a></li>
+        <li><a class="red-text" href="#services">Services</a></li>
+        <li><a class="red-text" href="#works">Works</a></li>
+        <li><a class="red-text" href="#contact">Contact</a></li>
     </ul>
 
-    <section>
+    <section class="section scrollspy">
 
         <div class="row container" id="about">
             <div class="container center">
@@ -171,7 +189,7 @@
         </div>
     </section>
 
-    <section id="skills">
+    <section class="section scrollspy" id="skills">
         <div> 
             <div class="container center white-text" id="intro2">
             <h2>My Skills</h2>
@@ -180,46 +198,58 @@
         <div class="row container white-text">
             <div class="col s12 m6 l6 container" id="">
                 <div class="red-text"><h4>Softwares</h4></div>
+                <span class="skills__name">HTML</span>
                 <div id="skills__data">
-                    <span class="skills__name">HTML</span>
-                </div> <br/>
+                    <div class="skills html">90%</div>                    
+                </div> 
 
+                <span class="skills__name">CSS</span>
                 <div id="skills__data">
-                    <span class="skills__name">CSS</span>
+                    <div class="skills css">90%</div>
                 
-                </div> <br/>
+                </div>
 
+                <span class="skills__name">JavaScript</span>
                 <div id="skills__data">
-                    <span class="skills__name">JavaScript</span>
-                </div> <br/>
+                    <div class="skills js">65%</div>
+                </div>
 
+                <span class="skills__name">Python</span>
                 <div id="skills__data">
-                    <span class="skills__name">Python</span>
+                    <div class="skills php">60%</div>
                     
-                </div> <br/>
+                </div> 
 
+                <span class="skills__name">PHP</span>
+                <div id="skills__data">
+                    <div class="skills py">50%</div>
+                    
+                </div> 
             </div>
 
             <div class="col s12 m6 l6 container" id="">
                 <div class="red-text "><h4>HardWare</h4></div>
-                <div id="skills__data">
-                    <span class="skills__name">Maintanance and Repair</span>
-                    
-                </div> <br/>
 
+                <span class="skills__name">Maintanance and Repair</span>
                 <div id="skills__data">
-                    <span class="skills__name">Networking</span>
-                    
-                </div> <br/>
+                    <div class="skills repair">90%</div>
+                </div> 
 
+                <span class="skills__name">Networking</span>
                 <div id="skills__data">
-                    <span class="skills__name">Exchange</span>
-                    
-                </div> <br/>
+                    <div class="skills net">70%</div>
+                </div> 
 
+                <div class="red-text "><h5>Cloud Computing</h5></div>
+
+                <span class="skills__name">Exchange</span>
                 <div id="skills__data">
-                    <span class="skills__name">Sharepoints</span>
+                    <div class="skills exch">90%</div>
                     
+                </div>
+                <span class="skills__name">Sharepoints</span>
+                <div id="skills__data">
+                    <div class="skills shar">60%</div>   
                 </div>
 
             </div>
@@ -227,7 +257,7 @@
     </div>
     </section>
 
-<section id="services">
+<section class="section scrollspy" id="services">
     <div class="container center" id="intro2">
         <h3 class="red-text" >My Services</h3>
     </div>
@@ -266,45 +296,134 @@
 
 </section>
 
-<section id="works">
+<section class="section scrollspy" id="works">
     <div class="container red-text center-align" id="intro2"><h3>My Works</h3></div> <br/>
-    <div class="row container">
+    <div class="row container portfolio-holder">
         <div class="col s12 l4">
-            <img src="img/land.png" alt="" width="100%">
-            <a class="waves-effect waves-light btn red">DEMO</a>
-            <a class="waves-effect waves-light btn red right">CODE</a>
-        </div>
+            <img class="materialboxed" src="img/land.png" width="100%"> <br/>
+    
+            <a class="waves-effect waves-light btn red" href="https://green1634.github.io/Real_Estate/">DEMO</a>
+            <a class="waves-effect waves-light btn red right" href="https://github.com/Green1634/Real_Estate" >CODE</a>
+        </div> 
 
         <div class="col s12 l4">
-            <img src="img/parallax.png" alt="" width="100%">
-            <a class="waves-effect waves-light btn red">DEMO</a>
-            <a class="waves-effect waves-light btn red right">CODE</a>
+            <img class="materialboxed" src="img/parallax.png" width="100%"> <br/>
+            <a class="waves-effect waves-light btn red" href="https://green1634.github.io/Assignment_1/parallax.html">DEMO</a>
+            <a class="waves-effect waves-light btn red right" href="https://github.com/Green1634/Assignment_1/blob/main/parallax.html">CODE</a>
         </div>
         
         <div class="col s12 l4">
-            <img src="img/contact.png" alt="" width="100%">
-            <a class="waves-effect waves-light btn red">DEMO</a>
-            <a class="waves-effect waves-light btn red right">CODE</a>
+            <img src="img/contact.png" class="materialboxed" alt="" width="100%"> <br/>
+            <a class="waves-effect waves-light btn red" href="https://green1634.github.io/Assignment_1/contact.html">DEMO</a>
+            <a class="waves-effect waves-light btn red right" href="https://github.com/Green1634/Assignment_1/blob/main/contact.html">CODE</a>
         </div> <br/>
-        
-        <!-- <div class="col s12 l4">
-            <img src="img/port.png" alt="" width="100%">
-            <a class="waves-effect waves-light btn red">DEMO</a>
-            <a class="waves-effect waves-light btn red right">CODE</a>
+    </div>  <br/>
+
+    <div class="row container portfolio-holder">
+        <div class="col s12 l4 portfolio-holder">
+            <img class="materialboxed" src="img/food.png" width="100%"> <br/>
+    
+            <a class="waves-effect waves-light btn red" href="https://github.com/Green1634/Restaurant">DEMO</a>
+            <a class="waves-effect waves-light btn red right" href="https://green1634.github.io/Restaurant/">CODE</a>
         </div>
 
         <div class="col s12 l4">
-            <img src="img/parallax.png" alt="" width="100%">
-            <a class="waves-effect waves-light btn red">DEMO</a>
-            <a class="waves-effect waves-light btn red right">CODE</a>
+            <img class="materialboxed" src="img/project.png" width="100%"> <br/>
+            <a class="waves-effect waves-light btn red" href="https://green1634.github.io/Project-1/">DEMO</a>
+            <a class="waves-effect waves-light btn red right" href="https://github.com/Green1634/Project-1">CODE</a>
         </div>
         
         <div class="col s12 l4">
-            <img src="img/contact.png" alt="" width="100%">
-            <a class="waves-effect waves-light btn red">DEMO</a>
-            <a class="waves-effect waves-light btn red right">CODE</a>
-        </div> -->
-    </div>  
+            <img src="img/port.png" class="materialboxed" alt="" width="100%"> <br/>
+            <a class="waves-effect waves-light btn red" href="https://green1634.github.io/portfolio/">DEMO</a>
+            <a class="waves-effect waves-light btn red right" href="https://github.com/Green1634/portfolio">CODE</a>
+        </div>
+        
+    </div>
+</section>
+
+<section class="section scrollspy" id="contact">
+
+    <div class="row container">
+        <div class="container center">
+        <div class="red-text" id="intro2"><h3>Contact Me</h3></div>
+
+        </div>
+        <div class="col s12 m6 l6 ">
+          <div class="container"><img src="img/at.jpg" alt="" class="responsive-img hoverable" width="100%" height="500%" ></div> <br/>
+
+          <div class="container">
+            <i class="material-icons prefix">account_circle</i> <span id="info">Ibrahim Oluwakemi</span> 
+        </div> <br/>
+        <div class="container"><i class="material-icons prefix">local_phone</i> <span id="info">2347035251454</span></div> </br>
+        <div class="container">
+            <i class="material-icons prefix">email</i> <span id="info">greenreina01@gmail.com</span> 
+        </div> <br/>
+
+        </div>
+
+        <form action="">
+            <div class="row container">
+                    <div class="input-field col s12 l6 container">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">Name</label>
+                    
+                    <div class="row">
+                        <div class="input-field col s11 l12">
+                            <i class="material-icons prefix">message</i>
+                        <input id="text" type="text" class="validate">
+                        <label for="text">Message Title</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s11 l12">
+                            <i class="material-icons prefix">build</i>
+                        <input id="text" type="text" class="validate">
+                        <label for="text">Project</label>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="input-field col s11 l12">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Write your message</label>
+                        </div>
+                    </div>
+
+                    <div class="container"><a class="waves-effect waves-light btn red" href="mailto:greenreina01@gmail.com">SEND MESSAGE</a></div>
+            </div>
+        </form>
+    
+    </div>
+
+</section>
+
+<section class="section scrollspy">
+    <footer class="black">
+        <div class="container center-align">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <h5 class="white-text">Oluwakemi Green Ibrahim</h5>
+                    <p class="grey-text text-lighten-4">I am Green, and this is my personal website, you can consult me here.</p>
+                </div>
+                <div class="">
+                    <!-- <li><a class="waves-red waves-light btn social dropbox"><i class="fa fa-google"></i></a></li> -->
+                    <a href="https://www.facebook.com/profile.php?id=100009711617506"><button class="btn btn-small facebook waves-light #01579b light-blue darken-4"  data-provider="facebook"><i class="fab fa-facebook-f"></i></button></a>
+                    <a href=https://twitter.com/Green_reina01><button class="btn btn-small twitter #81d4fa light-blue lighten-3" data-provider="twitter"><i class="fab fa-twitter"></i></button></a>
+                    <!-- <button class="btn google #d84315 deep-orange darken-3" data-provider="google"><i class="fab fa-google"></i></button> -->
+                    <a href="https://www.instagram.com/greenreina01/"><button class="btn btn-small instagram #ff4081 pink accent-2" data-provider="instagram"><i class="fab fa-instagram"></i></button></a>
+                    <a href="https://www.linkedin.com/in/kemi-ibrahim-554029154/"><button class="btn btn-small linkedin #2196f3 blue" data-provider="linkedin"><i class="fab fa-linkedin"></i></button></a> <br/>         
+                  </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright red">
+            <p class="grey-text text-lighten-4 container center-align"> © 2020 designed by Green </p>
+        </div>
+    </footer>
 </section>
 
 
@@ -316,6 +435,16 @@
     var elem = document.querySelector('.sidenav');
   var instance = new M.Sidenav(elem, {});
 
-    </script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, {});
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems, options);
+    });  
+
+</script>
 </body>
 </html>
