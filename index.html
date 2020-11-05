@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,500;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        header{
+                background-image: url(img/abstract.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 400px;
+                opacity: 0.9 ;
+            }
+            @media screen and (max-width: 670px) {
+                header{
+                    min-height: 400px;
+                }
+            }
+
+            body {
+                font-family: sans-serif;
+            }
+
+            section {
+                padding: 2rem 0 2rem;
+            }
+            #sp{
+                font-style: italic;
+            }
+
+            #intro{
+                margin-top: 6rem;
+            }
+
+            #intro2{
+                font-weight: 400;
+                font-size: larger ;
+                font-stretch: expanded;
+                font-family: 'Grandstander', cursive;
+            }
+
+            img {
+                border-radius: 10px;
+            }
+            #info {
+                margin-left: 20px;
+            }
+
+            i {
+                float: left;
+            }
+
+            #skill__data {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                margin: 2rem 0 2rem;
+                margin-bottom: 2rem 0 2rem;
+
+            }
+            #skills{
+                background-image: url(img/header.jpg);
+                opacity: 0.9;
+            }
+
+            .skills__name {
+                text-transform: uppercase;
+            }
+
+            .skills__bar{
+                position: absolute;
+                bottom: -.75rem;
+                height: .25rem;
+                background-color: red;
+            }
+
+            #works{
+                background-color: #616161 grey darken-2;
+            }
+    </style>
+
+</head>
+<body>
+    <header class="">
+        <div class="navbar-fixed ">
+            <nav class="nav-wrapper black">
+                <div class="container">
+                    <a href="#" class="brand-logo ">Portfo<span class="red-text">lio</span></a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                </div>
+            </nav>  
+        </div>
+
+        <div class="row container" id="home">
+            <div class="col s12 m12 l12 center" id="intro">
+                <div class="white-text">Hello, my name is</div>
+                <div class="white-text" id="intro2"><h3>Ibrahim Oluwakemi Green</h3></div>
+                <div class="white-text">And I am a <span class="red-text text-darken-1" id="intro2">Web Developer</span></div><br/>
+                <a class="waves-effect waves-light btn red">Hire Me</a>
+
+
+            </div>
+
+            
+        </div>
+
+
+    </header>
+
+    <!--Sidenave structure-->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <section>
+
+        <div class="row container" id="about">
+            <div class="container center">
+            <div class="red-text" id="intro2"><h3>About Me</h3></div>
+
+            </div>
+            <div class="col s12 m6 l6 ">
+            <p>Hi, I'm a web developer, passionate about creating and developing web interfaces.  I have months of experience in this area of work, with quality projects.</p>         
+            <div class="container"><img src="img/oluwakemi.jpg" alt="" class="responsive-img hoverable" width="100%" class="center-align"></div>
+            </div>
+
+            <div class="col s12 m6 l6 " id="">
+                <h5 class="red-text center-align">Information</h5> <br>
+                <div class="container">
+                    <i class="material-icons prefix">account_circle</i> <span id="info">Ibrahim Oluwakemi</span> 
+                </div> <br/>
+                <div class="container"><i class="material-icons prefix">local_phone</i> <span id="info">2347035251454</span></div> </br>
+                <div class="container">
+                    <i class="material-icons prefix">email</i> <span id="info">greenreina01@gmail.com</span> 
+                </div> <br/>
+
+                <h5 class="red-text center-align">Experience and Support</h5> <br>
+                <div class="container">
+                    <i class="material-icons prefix">next_week</i> <span id="info">3 Years Job Experience</span> 
+                </div> <br/>
+
+                <div class="container">
+                    <i class="material-icons prefix">work</i> <span id="info">4 Projects Completed</span> 
+                </div> <br/>
+
+                <div class="container">
+                    <i class="material-icons prefix">headset_mic</i> <span id="info">Support Online 24/7</span> 
+                </div> <br/>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div> 
+            <div class="container center white-text" id="intro2">
+            <h2>My Skills</h2>
+            <!-- <h5 class="red-text">Why Choose Me</h5> -->
+            <h3 id="intro2"class="white-text">My <span class="red-text"> Expertise </span>Area</h3> </div>
+        <div class="row container white-text">
+            <div class="col s12 m6 l6 container" id="">
+                <div class="red-text"><h4>Softwares</h4></div>
+                <div id="skills__data">
+                    <span class="skills__name">HTML</span>
+                </div> <br/>
+
+                <div id="skills__data">
+                    <span class="skills__name">CSS</span>
+                
+                </div> <br/>
+
+                <div id="skills__data">
+                    <span class="skills__name">JavaScript</span>
+                </div> <br/>
+
+                <div id="skills__data">
+                    <span class="skills__name">Python</span>
+                    
+                </div> <br/>
+
+            </div>
+
+            <div class="col s12 m6 l6 container" id="">
+                <div class="red-text "><h4>HardWare</h4></div>
+                <div id="skills__data">
+                    <span class="skills__name">Maintanance and Repair</span>
+                    
+                </div> <br/>
+
+                <div id="skills__data">
+                    <span class="skills__name">Networking</span>
+                    
+                </div> <br/>
+
+                <div id="skills__data">
+                    <span class="skills__name">Exchange</span>
+                    
+                </div> <br/>
+
+                <div id="skills__data">
+                    <span class="skills__name">Sharepoints</span>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </section>
+
+<section id="services">
+    <div class="container center" id="intro2">
+        <h3 class="red-text" >My Services</h3>
+    </div>
+    <div class="row container">
+        <div class="col s12 m4 l4">
+          <div class="card hoverable">
+            <div class="card-content">
+             <Div class="center-align"><a class="btn-floating waves-effect waves-light red"><i class="material-icons center-align">code</i></a></Div> <br/>
+            <span class="card-title center-align">Web Design</span> <br/>
+               <p>This service that I offer is of high quality, you can check through our projects at the Works tabs, a trial will convince you.</p> <br/>
+
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4 l4">
+            <div class="card hoverable">
+              <div class="card-content">
+               <Div class="center-align"><a class="btn-floating waves-effect waves-light red"><i class="material-icons center-align">cloud</i></a></Div> <br/>
+              <span class="card-title center-align">Cloud Services</span> <br/>
+              <p>This service that I offer is of high quality, I have two years of experience in cloud computing, as a cloud solution engineer.</p> <br/>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4 l4">
+            <div class="card hoverable">
+              <div class="card-content">
+               <Div class="center-align"><a class="btn-floating waves-effect waves-light red"><i class="material-icons center-align">build</i></a></Div> <br/>
+              <span class="card-title center-align">Repair</span> <br/>
+                 <p>This service that I offer is of high quality, I have over 5 years of experience in hardware repair and maintance.</p> <br/>
+              </div>
+            </div>
+          </div>
+    
+
+    </div>
+
+</section>
+
+<section id="works">
+    <div class="container red-text center-align" id="intro2"><h3>My Works</h3></div> <br/>
+    <div class="row container">
+        <div class="col s12 l4">
+            <img src="img/land.png" alt="" width="100%">
+            <a class="waves-effect waves-light btn red">DEMO</a>
+            <a class="waves-effect waves-light btn red right">CODE</a>
+        </div>
+
+        <div class="col s12 l4">
+            <img src="img/parallax.png" alt="" width="100%">
+            <a class="waves-effect waves-light btn red">DEMO</a>
+            <a class="waves-effect waves-light btn red right">CODE</a>
+        </div>
+        
+        <div class="col s12 l4">
+            <img src="img/contact.png" alt="" width="100%">
+            <a class="waves-effect waves-light btn red">DEMO</a>
+            <a class="waves-effect waves-light btn red right">CODE</a>
+        </div> <br/>
+        
+        <!-- <div class="col s12 l4">
+            <img src="img/port.png" alt="" width="100%">
+            <a class="waves-effect waves-light btn red">DEMO</a>
+            <a class="waves-effect waves-light btn red right">CODE</a>
+        </div>
+
+        <div class="col s12 l4">
+            <img src="img/parallax.png" alt="" width="100%">
+            <a class="waves-effect waves-light btn red">DEMO</a>
+            <a class="waves-effect waves-light btn red right">CODE</a>
+        </div>
+        
+        <div class="col s12 l4">
+            <img src="img/contact.png" alt="" width="100%">
+            <a class="waves-effect waves-light btn red">DEMO</a>
+            <a class="waves-effect waves-light btn red right">CODE</a>
+        </div> -->
+    </div>  
+</section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+    var elem = document.querySelector('.sidenav');
+  var instance = new M.Sidenav(elem, {});
+
+    </script>
+</body>
+</html>
